@@ -9,14 +9,47 @@
     <img src="img/Logo.png" width="154" height="64" alt="Логотип магазина Глэйси">
     <nav class="header-navigation">
       <ul>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li class="header-navigation-list">
+          <a href="catalog.html">Каталог</a>
+          <select>
+            <option>Новинки</option>
+            <option>Сливочное</option>
+            <option>Щербеты</option>
+            <option>Фруктовый лед</option>
+            <option>Мелорин</option>
+          </select>
+        </li>
         <li><a href="#">Доставка и оплата </a></li>
         <li><a href="#">О Компании </a></li>
       </ul>
     </nav>
     <ul class="header-button">
-      <li><button>лупа</button></li>
-      <li><button>вход</button></li>
+      <li class="header-button-search">
+        <button>
+          <img src="img/logo-magnifier.png" width="17" height="17" alt="лупа">
+        </button>
+          <form class="header-button-search-form">
+            <img src="img/logo-magnifier.png" width="17" height="17" alt="лупа">
+            <input type="text" name="search" placeholder="Что ищем?">
+          </form>
+
+      </li>
+      <li class="header-button-input">
+        <button>
+        <img src="img/logo-input.png" width="21" height="19" alt="вход">вход
+        </button>
+
+        <form class="header-button-input-form" action="" method="post">
+          <img src="img/logo-input.png" width="21" height="19" alt="вход"> вход
+          <p><input type="text" name="name" placeholder="Электронная почта"></p>
+          <p><input type="text" name="passead" placeholder="Пароль"></p>
+
+          <p><a href="#">Войти</a>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a></p>
+        </form>
+      </li>
+
       <li><button>пусто</button></li>
     </ul>
   </header>
@@ -52,6 +85,10 @@
   <div class="newsletter">
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
     </p>
+    <form class="newsletter-form" action="#" type="post">
+      <input type="text" name="mail" placeholder="Электронная почта">
+      <button type="submit">Отправить</button>
+    </form>
   </div>
   <footer class="footer">
     <div class="footer-social">
