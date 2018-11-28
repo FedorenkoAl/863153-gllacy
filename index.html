@@ -7,17 +7,78 @@
   <body>
     <header class="header">
     <img src="img/Logo.png" width="154" height="64" alt="Логотип магазина Глэйси">
+
     <nav class="header-navigation">
       <ul>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li class="header-navigation-list">
+          <a href="catalog.html">Каталог</a>
+          <ul>
+            <li>Новинки</li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="#">Доставка и оплата </a></li>
         <li><a href="#">О Компании </a></li>
       </ul>
     </nav>
+
     <ul class="header-button">
-      <li><button>лупа</button></li>
-      <li><button>вход</button></li>
-      <li><button>пусто</button></li>
+      <li class="header-button-search">
+
+        <button>
+          <img src="img/logo-magnifier.png" width="17" height="17" alt="лупа">
+        </button>
+
+          <form class="header-button-search-form">
+          <button type="submit">
+            <img src="img/logo-magnifier.png" width="17" height="17" alt="лупа">
+          </button>
+            <input type="text" name="search" placeholder="Что ищем?">
+          </form>
+
+      </li>
+      <li class="header-button-input">
+        <button>
+        <img src="img/logo-input.png" width="21" height="19" alt="вход">вход
+        </button>
+
+        <form class="header-button-input-form" action="" method="post">
+
+          <p><input type="text" name="name" placeholder="Электронная почта"></p>
+          <p><input type="text" name="passead" placeholder="Пароль"></p>
+
+          <p><button type="submit">Войти</button>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a></p>
+        </form>
+      </li>
+
+      <li><button>пусто</button>
+
+      <form сlass="form-header-catalog" action="#" method="post">
+        <ul>
+          <li class="form-header-catalog-basket-1">
+            <p><img src="img/plombir-orange.jpg" width="33" height="33" alt="Пломбир сапелсиновым джемом"></p>
+              <p>Пломбир сапелсиновым джемом</p>
+              <p>1,5 кг*200 руб</p>
+              <p>300 руб</p>
+
+          </li>
+          <li class="form-header-catalog-basket-2">
+            <img src="img/plombir-strawberry.jpg"  width="33" height="33" alt="Клубничный пломбир с присыпкой из белогошоколада">
+            <p>Клубничный пломбир с присыпкой из белогошоколада</p>
+            <p>1,5 кг*300 руб</p>
+            <p>450 руб</p>
+          </li>
+        </ul>
+        <hr>
+        <p>Итого 750 руб</p>
+        <button class="form-header-catalog-button" type="submit">Оформить заказ</button>
+      </form>
+    </li>
     </ul>
   </header>
   <section class="activities">
@@ -52,6 +113,10 @@
   <div class="newsletter">
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
     </p>
+    <form class="newsletter-form" action="#" type="post">
+      <input type="text" name="mail" placeholder="Электронная почта">
+      <button type="submit">Отправить</button>
+    </form>
   </div>
   <footer class="footer">
     <div class="footer-social">
@@ -83,5 +148,18 @@
       Сделано в HTML Academy © 2017
     </p>
   </footer>
+  <div class="popup">
+    <h2>Мы обязателно Вам ответим!</h2>
+    <form action="" method="">
+      <p>
+        <input type="text" name="name" placeholder="Как Вас зовут?"></p>
+        <p><input type="text" name="mail" placeholder="Ваша почта для ответа?"></p>
+        <p><textarea rows="5" cols="20" placeholder="Напишите что-нибудь.."></textarea>
+      </p>
+      <button type="button">Закрыть</button>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+
 </body>
 </html>
