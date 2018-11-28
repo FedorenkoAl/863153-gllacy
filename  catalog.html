@@ -23,8 +23,30 @@
     </nav>
 
     <ul class="header-catalog-button">
-      <li><button>лупа</button></li>
-      <li><button>вход</button></li>
+      <li>
+
+        <form class="header-button-search-form">
+          <button type="submit">
+            <img src="img/logo-magnifier.png" width="17" height="17" alt="лупа">
+          </button>
+            <input type="text" name="search" placeholder="Что ищем?">
+          </form>
+      </li>
+      <li>
+        <button>
+        <img src="img/logo-input.png" width="21" height="19" alt="вход">вход
+        </button>
+
+        <form class="header-button-input-form" action="" method="post">
+
+          <p><input type="text" name="name" placeholder="Электронная почта"></p>
+          <p><input type="text" name="passead" placeholder="Пароль"></p>
+
+          <p><button type="submit">Войти</button>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a></p>
+        </form>
+      </li>
 
       <li class="header-catalog-button-basket">
         <button>2 товара</button>
