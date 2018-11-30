@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -10,9 +12,9 @@
 
     <nav class="header-navigation">
       <ul>
-        <li class="header-navigation-list">
+        <li>
           <a href="catalog.html">Каталог</a>
-          <ul>
+          <ul class="header-navigation-list">
             <li>Новинки</li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -40,9 +42,9 @@
           </form>
 
       </li>
-      <li class="header-button-input">
-        <button>
-        <img src="img/logo-input.png" width="21" height="19" alt="вход">вход
+      <li>
+        <button class="header-button-input">
+        вход
         </button>
 
         <form class="header-button-input-form" action="" method="post">
@@ -56,9 +58,10 @@
         </form>
       </li>
 
-      <li><button>пусто</button>
+      <li>
+        <button class="header-button-basket">пусто</button>
 
-      <form сlass="form-header-catalog" action="#" method="post">
+      <!-- <form сlass="form-header-catalog" action="#" method="post">
         <ul>
           <li class="form-header-catalog-basket-1">
             <p><img src="img/plombir-orange.jpg" width="33" height="33" alt="Пломбир сапелсиновым джемом"></p>
@@ -77,7 +80,7 @@
         <hr>
         <p>Итого 750 руб</p>
         <button class="form-header-catalog-button" type="submit">Оформить заказ</button>
-      </form>
+      </form> -->
     </li>
     </ul>
   </header>
@@ -111,12 +114,14 @@
   </div>
 
   <div class="newsletter">
+    <div class="newsletter-wrapper">
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
     </p>
     <form class="newsletter-form" action="#" type="post">
       <input type="text" name="mail" placeholder="Электронная почта">
       <button type="submit">Отправить</button>
     </form>
+  </div>
   </div>
   <footer class="footer">
     <div class="footer-social">

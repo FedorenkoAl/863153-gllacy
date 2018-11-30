@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto",Times New Roman, serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #849d8f;
+}
+
+/*Скрыл формы*/
+
+.header-navigation-list,
+.header-button-search-form,
+.header-button-input-form,
+.newsletter-form,
+.popup {
+  display: none;
+}
+
+a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+header ul,
+.header-navigation ul,
+.header-button,
+.breadcrumb,
+.main-catalog-list,
+.footer ul {
+  list-style: none;
+
+}
+
+.header-navigation,
+.header-catalog-navigation {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.header-button-input {
+  width: 93px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-image: url(../img/logo-input.png);
+  background-repeat: no-repeat;
+}
+
+.header-button-basket {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-image: url(../img/logo-basket.png);
+  background-repeat: no-repeat;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.breadcrumb a:first-child:hover {
+  color: #ffbc9e;
+}
+
+.timework-time {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.timework-tell {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main-catalog h1 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.main-catalog-list a {
+  font-weight: 500;
+}
+
+.main-catalog-list p {
+
+}
+
+.main-catalog-list b {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.main-catalog-list span {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.activities {
+  padding: 35px;
+  margin: 35px;
+  border-radius: 10px;
+
+  font-weight: 400;
+  color: #323232;
+
+  background-image: url(../img/fon-waffle.jpg);
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.activities h2 {
+  color: #323232;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.newsblock {
+
+  width: 866px;
+  margin: 35px;
+  padding-top: 25px;
+  padding-bottom: 150px;
+
+
+  background-image: url(../img/fon-strawberry.jpg);
+   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.newsblock p {
+  color: #323232;
+  font-weight: 500;
+}
+
+.newsblock a {
+  color: #323232;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.newsblock a:hover,
+.newsblock a:focus {
+  color: #e84d37;
+}
+
+.newsletter-wrapper {
+  border: 1px solid red;
+  width: 549px;
+  padding-top: 30px;
+  padding-left: 21px;
+  padding-right: 22px;
+  margin: auto;
+  padding-bottom: 117px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  background-size: cover;
+}
+.newsletter {
+  width: 610px;
+  margin: 35px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 15px;
+  background-image: url(../img/fon-mail.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.newsletter p {
+  color: #5a5a5a;
+  font-weight: 400;
+}
+
+.footer-documentation {
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+
+  background-image: url(../img/heart.png);
+  background-repeat: no-repeat;
+}
+
+.footer-documentation a:hover,
+.footer-documentation a:focus {
+  color: #ffbc9e;
+}
+
+.footer-copyright {
+  color: #fefefe;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
