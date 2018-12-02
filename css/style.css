@@ -219,7 +219,8 @@ header ul,
 /*Стили для сетки*/
 
 .header,
-.header-catalog  {
+.header-catalog,
+.main-catalog-list-wrepper  {
 
   width: 1250px;
 
@@ -339,10 +340,11 @@ header ul,
   margin-right: 20px;
 }
 
-
-.main-catalog-list-wrepper {
-
-justify-content: space-between;
+/*Для каталога*/
+.main-catalog-list-wrepper .main-catalog-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 
 }
 
