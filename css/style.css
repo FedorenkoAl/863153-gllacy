@@ -32,7 +32,6 @@ a {
 header ul,
 .header-navigation ul,
 .header-button,
-
 .breadcrumb,
 .main-catalog-list,
 .footer ul {
@@ -44,6 +43,7 @@ header ul,
 .header-catalog-navigation {
   font-weight: 700;
   line-height: 18px;
+  font-size: 16px;
 }
 
 .header-button-input {
@@ -104,11 +104,12 @@ header ul,
 
 }
 
-.main-catalog-list b {
+.main-catalog-list  b {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
 }
+
 
 .main-catalog-list span {
   font-size: 30px;
@@ -136,11 +137,11 @@ header ul,
 
 .newsblock {
 
-  width: 610px;
+  width: 600px;
 
   padding-left: 10px;
   padding-top: 2px;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   border-radius: 15px;
 
   background-image: url(../img/fon-strawberry.jpg);
@@ -167,15 +168,15 @@ header ul,
 }
 
 .newsletter-wrapper {
-  padding: 1px 13px 170px;
+  padding: 1px 13px 172px;
 
   background-color: #f8f7f4;
   border-radius: 15px;
  }
 .newsletter {
-  width: 610px;
+  width: 600px;
 
-  padding:10px;
+  padding: 8px;
 
 
   border-radius: 15px;
@@ -220,15 +221,22 @@ header ul,
 
 .header,
 .header-catalog,
-.main-catalog-list-wrepper  {
-
+.main-catalog,
+.footer {
+  margin: 0 auto;
   width: 1250px;
 
+
+}
+
+.wrepper {
+  margin: 0 auto;
+  width: 1250px;
 }
 
 .header-container,
 .wrepper-main-catalog,
-.main-catalog-list-wrepper  {
+.main-catalog-list-wrepper {
   display: flex;
 
   margin: 10px auto;
@@ -236,6 +244,7 @@ header ul,
 }
 
 .header-navigation ul,
+.header-navigation-list,
 .header-catalog-navigation ul,
 .header-button,
 .footer-social ul,
@@ -249,14 +258,13 @@ header ul,
 .header-container-1 {
 
   display: flex;
-
+ margin: auto;
+ align-items: center;
 }
 
 .header-container-2 {
-
-  margin-left: auto;
+  margin: auto;
   width: 300px;
-
 }
 
 
@@ -265,8 +273,11 @@ header ul,
   width: 549px;
   display: flex;
   justify-content: space-between;
-
   margin-left: 50px;
+}
+
+.header-navigation ul li {
+  margin: auto;
 }
 
 .header-container-2 .header-button {
@@ -287,22 +298,18 @@ header ul,
 }
 
 .activities-container-wrepper {
-
   display: flex;
   align-content: flex-start;
   justify-content: space-between;
-
-
 }
+
  .activities-item  {
   width: 576px;
   display: flex;
 }
 
 .activities-item-3 {
-
   display: flex;
-
 }
 
 .wrapper-news {
@@ -318,16 +325,15 @@ header ul,
 .wrapper-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer-social {
-
   width: 200px;
 }
 
 .footer-social ul {
-
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-documentation ul {
@@ -336,16 +342,19 @@ header ul,
 }
 
 .wrapper-documentation-1 {
-
   margin-right: 20px;
 }
 
-/*Для каталога*/
-.main-catalog-list-wrepper .main-catalog-list {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+}
 
+
+.main-catalog-list-wrepper .main-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main-catalog-list li {
@@ -361,6 +370,12 @@ justify-content: space-around;
   display: flex;
   justify-content: space-between;
 }
+
 .main-catalog h1 {
-margin-left: 10px;
+  margin-left: 10px;
 }
+
+
+
+
+
