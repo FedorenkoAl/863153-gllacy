@@ -12,13 +12,17 @@ body {
 
 /*Скрыл формы*/
 
-.header-navigation-list,
+
 .header-button-search-form,
 .header-button-input-form,
+.header-form-catalog,
+.header-navigation .header-navigation-list,
+.header-catalog-navigation .header-navigation-list,
 .newsletter-form,
 .popup {
   display: none;
 }
+
 
 a {
   text-decoration: underline;
@@ -39,6 +43,7 @@ header ul,
 .header-catalog-navigation {
   font-weight: 700;
   line-height: 18px;
+  font-size: 16px;
 }
 
 .header-button-input {
@@ -99,11 +104,12 @@ header ul,
 
 }
 
-.main-catalog-list b {
+.main-catalog-list  b {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
 }
+
 
 .main-catalog-list span {
   font-size: 30px;
@@ -111,8 +117,7 @@ header ul,
   line-height: 45px;
 }
 .activities {
-  padding: 35px;
-  margin: 35px;
+
   border-radius: 10px;
 
   font-weight: 400;
@@ -125,7 +130,6 @@ header ul,
 
 .activities h2 {
   color: #323232;
-
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -133,14 +137,15 @@ header ul,
 
 .newsblock {
 
-  width: 866px;
-  margin: 35px;
-  padding-top: 25px;
-  padding-bottom: 150px;
+  width: 600px;
 
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 90px;
+  border-radius: 15px;
 
   background-image: url(../img/fon-strawberry.jpg);
-   background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -151,7 +156,6 @@ header ul,
 
 .newsblock a {
   color: #323232;
-
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -164,27 +168,24 @@ header ul,
 }
 
 .newsletter-wrapper {
-  border: 1px solid red;
-  width: 549px;
-  padding-top: 30px;
-  padding-left: 21px;
-  padding-right: 22px;
-  margin: auto;
-  padding-bottom: 117px;
+  padding: 1px 13px 172px;
+
   background-color: #f8f7f4;
   border-radius: 15px;
-  background-size: cover;
-}
+ }
 .newsletter {
-  width: 610px;
-  margin: 35px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  width: 600px;
+
+  padding: 8px;
+
+
   border-radius: 15px;
   background-image: url(../img/fon-mail.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 
 .newsletter p {
   color: #5a5a5a;
@@ -213,3 +214,168 @@ header ul,
   font-weight: 400;
   line-height: 18px;
 }
+
+
+
+/*Стили для сетки*/
+
+.header,
+.header-catalog,
+.main-catalog,
+.footer {
+  margin: 0 auto;
+  width: 1250px;
+
+
+}
+
+.wrepper {
+  margin: 0 auto;
+  width: 1250px;
+}
+
+.header-container,
+.wrepper-main-catalog,
+.main-catalog-list-wrepper {
+  display: flex;
+
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+.header-navigation ul,
+.header-navigation-list,
+.header-catalog-navigation ul,
+.header-button,
+.footer-social ul,
+.main-catalog ul {
+
+
+  padding: 0;
+  margin: 0;
+}
+
+.header-container-1 {
+
+  display: flex;
+ margin: auto;
+ align-items: center;
+}
+
+.header-container-2 {
+  margin: auto;
+  width: 300px;
+}
+
+
+.header-navigation ul,
+.header-catalog-navigation ul {
+  width: 549px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.header-navigation ul li {
+  margin: auto;
+}
+
+.header-container-2 .header-button {
+  display: flex;
+  justify-content: space-around;
+}
+/*Для */
+.activities  {
+  margin-bottom: 40px;
+}
+
+.activities p {
+  margin-left: 4px;
+
+}
+.activities-container {
+  margin: 10px 10px;
+}
+
+.activities-container-wrepper {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+ .activities-item  {
+  width: 576px;
+  display: flex;
+}
+
+.activities-item-3 {
+  display: flex;
+}
+
+.wrapper-news {
+  display: flex;
+  justify-content: space-between;
+}
+/*Для footer*/
+
+.footer {
+  margin-top: 20px;
+}
+
+.wrapper-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-social {
+  width: 200px;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-documentation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-documentation-1 {
+  margin-right: 20px;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-catalog-list-wrepper .main-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-catalog-list li {
+ width: 267px;
+}
+
+.wrepper-main-catalog {
+  justify-content: space-between;
+}
+
+.bread ul{
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-catalog h1 {
+  margin-left: 10px;
+}
+
+
+
+
+
