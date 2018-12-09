@@ -108,7 +108,7 @@ a {
 
 .header-catalog-site,
 .header-catalog-navigation ul {
-  
+
   display: flex;
   margin-left: 0px;
 }
@@ -129,7 +129,7 @@ a {
   font-weight: 700;
   line-height: 18px;
   background-color: #f7f6f3;
-  border-radius: 15px; 
+  border-radius: 15px;
   display: none;
 }
 
@@ -148,7 +148,7 @@ a {
 .header-navigation-list li:not(:nth-child(1))  {
   margin-bottom: 10px;
   padding: 5px 10px;
-  
+
 }
 
 .header-navigation-list a {
@@ -193,7 +193,7 @@ li:first-child:active .header-presence-button {
 
 }
 
- 
+
 /*Конец стили для навигации*/
 
 /*Стили для кнопок-поиск*/
@@ -234,7 +234,7 @@ li:first-child:active .header-presence-button {
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   background-color: #ffffff;
-  
+
 }
 
 .header-button-search-form {
@@ -245,7 +245,7 @@ li:first-child:active .header-presence-button {
   border: none;
   border-radius: 5px;
   background-color: #f8f7f4;
-  
+
 }
 
 .header-button-search-form {
@@ -276,7 +276,7 @@ li:hover .submit {
   background-image: url(../img/logo-input.png);
   background-repeat: no-repeat;
   background-position: 5% 40%;
-  
+
 }
 
 .header-button-input-form {
@@ -358,10 +358,7 @@ li:hover .submit {
   font-weight: 400;
   line-height: 24px;
   }
-
-  
-
-  /*Конец стилей "Вход"*/
+/*Конец стилей "Вход"*/
 
 /*Кнопка "Вход" для index.html*/
 .header-button-basket {
@@ -544,19 +541,23 @@ li:hover .submit {
 }
 
 .header-form-catalog {
-  position: fixed;
-  top: 25%;
-  left: 25%;
+  position: absolute;
+  left: -300px;
+  top: 40px;
+  border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  padding-bottom: 13px;
-  outline: 1px solid red;
+  padding-left: 41px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  display: none;
 }
 
 .header-form-catalog-basket-1,
 .header-form-catalog-basket-2 {
   display: flex;
- }
+  align-items: center;
+}
 
 .header-form-catalog ul {
   display: flex;
@@ -569,21 +570,22 @@ li:hover .submit {
   margin: 0;
 }
 
-.header-form-catalog ul {
-  padding-left: 41px;
-  padding-right: 33px;
-  outline: 1px solid red;
-}
-
 .header-form-catalog-basket-2 p,
 .header-form-catalog-basket-1 p {
+  color: #323232;
+  padding-right: 15px;
+}
+
+.header-form-catalog-basket-2 {
+  border-bottom: 1px solid #cacac7;
+}
+
+.header-form-catalog .header-form-catalog-basket-2 p,
+.header-form-catalog .header-form-catalog-basket-1 p {
   color: #323232;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  padding-right: 15px;
-
-  
 }
 
 .form-header-catalog-button {
@@ -597,7 +599,25 @@ li:hover .submit {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  margin-left: 350px;
+  margin-right: 14px;
+}
+
+.wrepperform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-form-catalog-basket-1::before,
+.header-form-catalog-basket-2::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/Х.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
 }
 
 .header-form-catalog p {
@@ -607,15 +627,22 @@ li:hover .submit {
   line-height: 18px;
 }
 
+.wrepperform p {
+  color: #323232;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-right: 13px;
+}
 
+.price {
+  color: #999999;
+}
 
 .form-basket:hover .header-form-catalog {
   display: block;
 }
 
-.footer {
-  margin-top: 20px;
-}
 
 .breadcrumb {
   font-size: 14px;
@@ -643,6 +670,7 @@ li:hover .submit {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
+  margin-left: 10px;
 }
 
 .main-catalog-list a {
@@ -662,12 +690,36 @@ li:hover .submit {
   margin-left: 4px;
 }
 
-.footer-documentation {
+.main-catalog-list-wrepper .main-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.main-catalog-list li {
+ width: 267px;
+}
+
+.wrepper-main-catalog {
+  justify-content: space-between;
+}
+
+.bread ul{
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Стили для footer*/
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer-documentation {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
-
   background-image: url(../img/heart.png);
   background-repeat: no-repeat;
 }
@@ -679,7 +731,6 @@ li:hover .submit {
 
 .footer-copyright {
   color: #fefefe;
-
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -713,32 +764,6 @@ li:hover .submit {
   flex-direction: column;
 }
 
-
-.main-catalog-list-wrepper .main-catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.main-catalog-list li {
- width: 267px;
-}
-
-.wrepper-main-catalog {
-  justify-content: space-between;
-}
-
-.bread ul{
-  width: 220px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-catalog h1 {
-  margin-left: 10px;
-}
-
-
 /*Стили для поапа*/
 .popup {
   position: relative;
@@ -746,20 +771,18 @@ li:hover .submit {
 }
 
 .popup-form {
-  
   width: 478px;
   padding-left: 39px;
   padding-bottom: 27px;
- position: fixed;
- top: 20%;
- left: 30%;
- border-radius: 15px;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  border-radius: 15px;
   background-color: #f8f7f4;
 }
 
 .popup-form h2 {
   color: #323232;
-  
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -767,17 +790,15 @@ li:hover .submit {
 
 .popup-form input {
   width: 267px;
- padding-left: 15px;
- padding-top: 16px;
- padding-bottom: 12px;
- 
+  padding-left: 15px;
+  padding-top: 16px;
+  padding-bottom: 12px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   background-color: #ffffff;
 }
 
 .popup-form textarea {
   width: 428px;
-  
   border: 1px solid rgba(178, 178, 178, 0.52);
   background-color: #ffffff;
 }
@@ -792,7 +813,6 @@ li:hover .submit {
   background-color: #e84d37;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   color: #fefefe;
- 
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -808,5 +828,5 @@ li:hover .submit {
   color:#000;
   opacity: 1;
   background-image: url(../img/_Х-big.png);
- 
-}
+ }
+
