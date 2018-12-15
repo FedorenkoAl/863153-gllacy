@@ -57,24 +57,24 @@ a {
 .header-navigation-site {
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 11px;
 }
 
 .header-container-2 {
   margin-left: auto;
   }
 
- .header-navigation-site li {
- 	margin-right: 20px;
+ .header-navigation-site >li {
+ 	margin-right: 3px;
+  padding: 9px 13px;
+
  }
 
 
-.header-catalog-site li {
-  margin-right: 20px;
-}
 
  .header-navigation,
-.header-catalog-navigation {
+.header-catalog-navigation,
+.catalog-saite {
   font-weight: 700;
   line-height: 18px;
   font-size: 16px;
@@ -86,7 +86,7 @@ a {
  }
 
  .header-container-2 li {
-  padding-right:20px;
+  padding-right: 5px;
 }
 
 .header-catalog-site,
@@ -115,12 +115,12 @@ a {
   display: none;
 }
 
-li:hover .header-navigation-list {
+.catalog-saite:hover .header-navigation-list {
   display: block;
 }
 
 .header-navigation-list li:not(:nth-child(1))  {
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 
 .header-navigation-list a {
@@ -137,18 +137,29 @@ li:hover .header-navigation-list {
   font-weight: 700;
   line-height: 16px;
   margin-bottom: 12px;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-bottom: 15px;
   border-bottom: 1px solid #d1d0ce;
 }
 
-.header-navigation-site >li:hover {
-  padding: 9px 13px;
+.header-navigation-site >li:not(:nth-child(1)):hover,
+.catalog-saite:hover {
   border-radius: 15px;
   background-color: #f7f6f3;
+
 }
 
-.header-navigation-site >li:hover >a {
+.header-navigation-site >li:not(:nth-child(1)):active,
+.catalog-saite:active {
+  border-radius: 15px;
+  background-color: #f7f6f3;
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+  background-color: #f8f7f4;
+}
+
+.header-navigation-site >li:not(:nth-child(1)):hover >a,
+.catalog-saite:hover >a {
   color: #323232;
   text-decoration: none;
   font-size: 16px;
@@ -161,11 +172,7 @@ li:hover .header-navigation-list {
   background-color: #fbded7;
 }
 
-.header-navigation-list li:not(:nth-child(1)):active {
-  background-color: #f6b5a5;
-}
 
-/*Конец стили для навигации*/
 /*Стиль для "Поиск"*/
 .header-button {
   position: relative;
@@ -179,13 +186,15 @@ li:hover .header-navigation-list {
   background-position: center;
   border: none;
   border-radius: 50%;
+  background-color: #a1b4a9;
+
 }
 
-.magnifier:hover {
+li:hover .magnifier  {
   background-image: url(../img/logo-magnifie-2.png);
   background-repeat: no-repeat;
   background-position: center;
-
+  background-color: #f8f7f4;
 }
 
 .header-button-search-form input {
@@ -226,7 +235,7 @@ li:hover .submit {
   display: block;
 }
 
-/*Конец стилей для "Поиск"*/
+
 
 /*Стили для кнопки "Вход"*/
 
@@ -234,8 +243,8 @@ li:hover .submit {
   padding-top: 10px;
   padding-left: 44px;
   padding-right: 17px;
-
-  opacity: 0,8;
+  background-color: #a1b4a9;
+  /*opacity: 0,2;*/
   padding-bottom: 9px;
   border-radius: 25px;
   font-size: 14px;
@@ -249,15 +258,22 @@ li:hover .submit {
 
 }
 
-.header-button-input:hover {
+.header-button li:hover .header-button-input {
   background-image: url(../img/logo-forminput.png);
   background-repeat: no-repeat;
   background-color: #f8f7f4;
   color: #323232;
-   opacity: 1;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  border: none;
+}
+
+.header-button li:hover:active .header-button-input {
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+  background-color: #f8f7f4;
 }
 
 
@@ -271,6 +287,7 @@ li:hover .submit {
   display: none;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
+  z-index: 1;
 }
 
 .header-input-form input {
@@ -289,9 +306,7 @@ li:hover .submit {
 
 
 .form-button-input {
-
   padding: 15px 25px;
-
   color: #fefefe;
   border: none;
   font-size: 18px;
@@ -301,6 +316,7 @@ li:hover .submit {
   box-shadow: 0 1px 2px #ac1000;
   background-color: #e84d37;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+
 }
 
 .blok-2 {
@@ -459,7 +475,6 @@ padding-right: 20px;
 
   padding: 14px 19px;
   color: #fefefe;
-
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -484,23 +499,6 @@ padding-right: 20px;
   border-radius: 50%;
 }
 
-.header-button-catalog-input {
-
-  padding-top: 10px;
-  padding-left: 44px;
-  padding-right: 17px;
-  opacity: 0,8;
-  padding-bottom: 9px;
-  border-radius: 15px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  color: #ffffff;
-  border: none;
-  background-image: url(../img/logo-input.png);
-  background-repeat: no-repeat;
-  background-position: 16px 40%;
-}
 
 .header-button-basket {
   padding-left: 35px;
@@ -516,51 +514,41 @@ padding-right: 20px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  background-color: #a1b4a9;
 }
 
 
 
-.header-catalog-site li:first-child {
+.header-navigation-site .button-catalog {
   background-color: #d07058;
   color: #ffffff;
   border-radius: 15px;
   padding: 9px 13px;
-}
-
-.header-catalog-site li:first-child a {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: px;
-  color: #ffffff;
   text-decoration: none;
 }
 
-.form-basket:hover .button-basket {
-  display: block;
-}
-
-/*.form-basket:hover .header-button-basket {
-
-  display: none;
-}*/
-
-/*.form-basket:hover {
-
-  padding-left: 44px;
+.form-basket:hover .header-button-basket {
   padding-top: 10px;
-  padding-right: 16px;
   padding-bottom: 9px;
   background-color: #f8f7f4;
   opacity: 0.99;
   background-image: url(../img/logo-basketred.png);
-  background-position: 15px 10px;
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   border-radius: 20px;
   border: none;
+  color: #323232;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-}*/
+}
+
+.form-basket:hover:active .header-button-basket {
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+  background-color: #f8f7f4;
+}
+
  .header-catalog-site {
   position: relative;
  }
@@ -572,11 +560,15 @@ padding-right: 20px;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  padding-left: 41px;
+  padding-left: 81px;
   padding-top: 20px;
   padding-bottom: 21px;
   display: none;
   z-index: 1;
+}
+
+.form-basket:hover .header-form-catalog {
+  display: block;
 }
 
 .header-form-catalog-basket-1,
@@ -664,11 +656,6 @@ padding-right: 20px;
 .price {
   color: #999999;
 }
-
-.form-basket:hover .header-form-catalog {
-  display: block;
-}
-
 
 .breadcrumb {
   font-size: 14px;
@@ -818,7 +805,7 @@ padding-right: 20px;
 /*Стили для поапа*/
 .popup {
   position: relative;
-  display: none;
+  /*display: none;*/
 }
 
 .popup-form {
@@ -826,8 +813,9 @@ padding-right: 20px;
   padding-left: 39px;
   padding-bottom: 27px;
   position: fixed;
-  top: 20%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 15px;
   background-color: #f8f7f4;
 }
