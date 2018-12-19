@@ -10,7 +10,7 @@
   <header class="header">
     <div class="header-container">
       <div class="header-container-1">
-        <a href="#"><img src="img/Logo.png" width="154" height="64" alt="Логотип магазина Глэйси"></a>
+        <a href="index.html"><img src="img/Logo.png" width="154" height="64" alt="Логотип магазина Глэйси"></a>
         <nav class="header-navigation">
           <ul class="header-navigation-site">
             <li class="catalog">
@@ -90,6 +90,66 @@
       </div>
     </div>
     <h1>Сливочное мороженное</h1>
+     <section class="main-catalog-choice">
+       <form action="#"  method="post">
+        <fieldset>
+          <legend class="visually-hidden">Выбираем мороженно</legend>
+           <div class="wrepper-choise-1">
+            <label>
+              Сортировка:
+              <div class="popul">
+              <select>
+                <option>по популярности</option>
+              </select>
+            </div>
+            </label>
+            <label>
+              Цена: 100 руб. – 500 руб.
+              <div class="range"><input type="range" min="100" max="500"></div>
+            </label>
+            <fieldset>
+              <legend>Жирность:</legend>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="fatness" value="0">
+                <span>0%</span>
+                </label>
+                <label>
+                  <input type="radio" name="fatness" value="10" checked>
+                 <span>до 10%</span>
+               </label>
+                <label>
+                  <input type="radio" name="fatness" value="30">
+                <span> до 30%</span>
+               </label>
+                <label>
+                  <input type="radio" name="fatness" value="0">
+                 <span>выше 30%</span>
+               </label>
+             </div>
+            </fieldset>
+             </div>
+            <fieldset class="fillers">
+              <legend>Наполнители:</legend>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" checked> <span>шоколадные</span>
+                </label>
+                <label>
+                  <input type="checkbox" checked> <span>сахарные присыпки</span></label>
+                <label>
+                  <input type="checkbox"> <span>фрукты</span></label>
+                <label>
+                  <input type="checkbox"> <span>сиропы</span></label>
+                <label>
+                  <input type="checkbox"> <span>джемы</span>
+                </label>
+              </div>
+            </fieldset>
+             <button class="catalog-button-choice" type="submit">Применить</button>
+        </fieldset>
+       </form>
+     </section>
     <div class="main-catalog-list-wrepper">
       <ul class="main-catalog-list">
         <li>
@@ -97,75 +157,96 @@
           </p>
           <p><b>310</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           </p>
           <p><b>380</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </p>
           <p><b>355</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-cream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           </p>
           <p><b>415</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-cowberry.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
           </p>
           <p><b>325</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочное с брусничным джемом</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-blueberry.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
           </p>
           <p><b>410</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
           </p>
           <p><b>375</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-chocolatechip.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
           </p>
           <p><b>320</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочное с шоколадной стружкой</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-vanilla.jpg" width="267" height="267" alt="ливочно-ванильное с кусочками шоколада">
           </p>
           <p><b>440</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-menthol.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
           </p>
           <p><b>435</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочноe с ментоловым сиропом</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-piecechocolate.pg.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
           </p>
           <p><b>355</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочное с кусочками черного шоколада</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <p><img src="img/creamy-mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
           </p>
           <p><b>420</b><span><b>₽</b>/кг</span></p>
           <a href="#">Сливочное с мятным сиропом</a>
+          <a class="quickly" href="#">Быстрый просмотр</a>
         </li>
       </ul>
     </div>
+    <section class="pageswitch">
+      <div class="wrepper-page">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+    </div>
+    </section>
   </main>
     <footer class="footer">
       <div class="wrapper-footer">
