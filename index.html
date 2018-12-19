@@ -64,6 +64,10 @@
       </div>
     </header>
     <main>
+       <div class="main-timework">
+        <p class="timework-time">с 10 до 20,ежедневно</p>
+        <p class="timework-tell">8 812 450-25-25</p>
+      </div>
       <section class="slider">
         <div class="slider-controls">
             <label for="product-1">Первый</label>
@@ -185,9 +189,8 @@
   		</div>
   	</div>
     <div id="map">
-      <img src="img/pin.png" width="80" height="142">
-      <img src="img/Тень.png">
-      <img src="img/map.png" width="1250" height="430" alt="ул.Большая  Конюшенная 19/8,Санкт-Петербург">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abcbd2b1ab0a132b1d3510209f07b9cf0f15bc3f9d20354468c7899693640295a&amp;width=100%25&amp;height=440&amp;lang=ru_UA&amp;scroll=true"></script>
+
       <div class="address">
         <p>Адрес главного офиса<br>
         и офлайн-магазина:</p>
@@ -196,6 +199,7 @@
         <p class="tell">8 812 450-25-25<br>
         <span class="time">(с 10 до 20 ежедневно)</span></p>
        <button class="address-button" type="submit">Форма обратной связи</button>
+
       </div>
     </div>
   </main>
@@ -250,21 +254,7 @@
   					<button class="close" type="submit">Закрыть</button>
   		    </form>
   			</div>
-        <script>
-   var button = document.querySelector(".address-button");
-   var popup = document.querySelector(".popup");
-   var close = popup.querySelector(".popup button::before");
-
-   button.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("popup-clik");
-  });
-   close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("popup-clik");
-  });
-
-    </script>
+        <script src="js/script.js"></script>
   		</body>
   	</html>
 

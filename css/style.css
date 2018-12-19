@@ -86,6 +86,7 @@ a {
  }
 
  .header-container-2 li {
+  height: 35px;
   padding-right: 5px;
 }
 
@@ -179,8 +180,8 @@ a {
 }
 
 .magnifier {
-  width: 33px;
-  height: 33px;
+  width: 35px;
+  height: 35px;
   background-image: url(../img/logo-magnifier.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -338,6 +339,15 @@ li:hover .submit {
   }
 /*Конец стилей "Вход"*/
 
+.main-timework {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+
 .wrepper-sliader {
   width: 1200px;
   margin-left: auto;
@@ -468,6 +478,14 @@ li:hover .submit {
    border-radius: 10px;
 }
 
+.bonus h2 {
+  color: #ffffff;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
 .bonus p {
   margin-bottom: 30px;
   font-size: 18px;
@@ -565,8 +583,8 @@ li:hover .submit {
 	flex-direction: column;
 	margin: 0 26px;
 	padding-left: 20px;
-padding-right: 20px;
-	 border-radius: 10px;
+  padding-right: 20px;
+	border-radius: 10px;
 	background-image: url(../img/fon-waffle.jpg);
 	background-position: center;
 	background-repeat: repeat;
@@ -576,17 +594,14 @@ padding-right: 20px;
 
 .activities-container-wrepper {
   display: flex;
-
 }
 
 .activities-item  {
-
   display: flex;
-  }
+}
 
 .activities-item-3 {
   display: flex;
-
 }
 
 .activities h2 {
@@ -594,6 +609,12 @@ padding-right: 20px;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+}
+
+.activities-item p,
+.activities-item-3 p {
+   flex: 0 520px;
+   padding-left: 15px;
 }
 
 .wrapper-news {
@@ -615,12 +636,12 @@ padding-right: 20px;
 
 .newsblock p {
   color: #323232;
+  font-size: 16px;
   font-weight: 500;
 
 }
 
 .newsblock a {
-
   color: #323232;
   font-size: 18px;
   font-weight: 500;
@@ -636,7 +657,6 @@ padding-right: 20px;
 .newsletter {
   width: 560px;
   padding: 8px;
-
   border-radius: 15px;
   background-image: url(../img/fon-mail.png);
   background-repeat: no-repeat;
@@ -711,7 +731,7 @@ padding-right: 20px;
 #map {
   position: relative;
   width: 1200px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 #map img {
@@ -796,7 +816,6 @@ padding-right: 20px;
   border-radius: 50%;
 }
 
-
 .header-button-basket {
   padding-left: 35px;
   padding-top: 10px;
@@ -813,8 +832,6 @@ padding-right: 20px;
   line-height: 16px;
   background-color: #a1b4a9;
 }
-
-
 
 .header-navigation-site .button-catalog {
   background-color: #d07058;
@@ -1083,6 +1100,16 @@ padding-right: 20px;
 .footer-social ul {
   display: flex;
   justify-content: space-between;
+}
+
+.social-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #C8D1CC;
+  border-radius: 50%;
 }
 
 .footer-documentation ul {
