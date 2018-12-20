@@ -4,9 +4,8 @@ body {
   font-family: "Roboto",Times New Roman, serif;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
   text-transform: none;
-
+  color: #ffffff;
   background-color: #849d8f;
 }
 
@@ -24,18 +23,20 @@ a {
 .footer ul,
 .footer-social ul,
 .main-catalog ul {
-  list-style: none;
-   padding: 0;
+  padding: 0;
   margin: 0;
-
+  list-style: none;
 }
 
-.header,
+.header {
+  width: 1200px;
+  margin: 8px auto;
+}
+
 .main-catalog,
 .footer {
 	width: 1200px;
 	margin: 10px auto;
-
 }
 
 /*Стили для навигации*/
@@ -46,7 +47,6 @@ a {
 	display: flex;
 	align-items: center;
 	padding: 0 26px;
-
 }
 
 .header-container-1 {
@@ -62,17 +62,14 @@ a {
 
 .header-container-2 {
   margin-left: auto;
-  }
+}
 
  .header-navigation-site >li {
  	margin-right: 3px;
   padding: 9px 13px;
+}
 
- }
-
-
-
- .header-navigation,
+.header-navigation,
 .header-catalog-navigation,
 .catalog-saite {
   font-weight: 700;
@@ -85,14 +82,13 @@ a {
   align-items: center;
  }
 
- .header-container-2 li {
+.header-container-2 li {
   height: 35px;
   padding-right: 10px;
 }
 
 .header-catalog-site,
 .header-catalog-navigation ul {
-
   display: flex;
   align-items: center;
   margin-left: 0px;
@@ -102,17 +98,16 @@ a {
   position: relative;
 }
 
-
 .header-navigation-list {
-  padding: 13px 0;
-  background-color: #f8f7f4;
-  font-size: 14px;
-  line-height: 16px;
-  border-radius: 5px;
   position: absolute;
   top: 39px;
   left: -15px;
   display: none;
+  padding: 13px 0;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 5px;
+  background-color: #f8f7f4;
 }
 
 .catalog-saite:hover .header-navigation-list,
@@ -125,29 +120,28 @@ a {
 }
 
 .header-navigation-list a {
-  color: #323232;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   text-decoration: none;
+  color: #323232;
 }
 
 .header-navigation-list li:nth-child(1) {
-  color: #323232;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
   margin-bottom: 12px;
   padding-left: 10px;
   padding-bottom: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #323232;
   border-bottom: 1px solid #d1d0ce;
 }
 
 .header-navigation-site >li:not(:nth-child(1)):hover,
 .catalog-saite:hover {
-  border-radius: 15px;
   background-color: #f7f6f3;
-
+  border-radius: 15px;
 }
 
 .header-navigation-site >li:not(:nth-child(1)):active,
@@ -161,11 +155,11 @@ a {
 
 .header-navigation-site >li:not(:nth-child(1)):hover >a,
 .catalog-saite:hover >a {
-  color: #323232;
-  text-decoration: none;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  text-decoration: none;
+  color: #323232;
 }
 
 
@@ -186,13 +180,12 @@ a {
 .magnifier {
   width: 35px;
   height: 35px;
+  background-color: #a1b4a9;
   background-image: url(../img/logo-magnifier.png);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
   border-radius: 50%;
-  background-color: #a1b4a9;
-
 }
 
 li:hover .magnifier  {
@@ -203,29 +196,27 @@ li:hover .magnifier  {
 }
 
 .header-button-search-form input {
-  width: 311px;
   box-sizing: border-box;
+  width: 311px;
   padding: 15px 20px;
   margin: 15px 20px;
-  color: #999999;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  color: #999999;
+  background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-  background-color: #ffffff;
-
 }
 
 .header-button-search-form {
-  width: 341px;
   position: absolute;
   top: 35px;
   left: -305px;
+  width: 341px;
+  background-color: #f8f7f4;
   border: none;
   border-radius: 5px;
-  background-color: #f8f7f4;
-
 }
 
 .header-button-search-form {
@@ -239,9 +230,6 @@ li:hover .header-button-search-form {
 li:hover .submit {
   display: block;
 }
-
-
-
 /*Стили для кнопки "Вход"*/
 
 .header-button-input {
@@ -249,29 +237,27 @@ li:hover .submit {
   padding-left: 44px;
   padding-right: 17px;
   background-color: #a1b4a9;
-  /*opacity: 0,2;*/
   padding-bottom: 9px;
-  border-radius: 25px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   color: #ffffff;
-  border: none;
   background-image: url(../img/logo-input.png);
   background-repeat: no-repeat;
   background-position: 16px 40%;
-
+  border: none;
+  border-radius: 25px;
 }
 
 .header-button li:hover .header-button-input {
-  background-image: url(../img/logo-forminput.png);
-  background-repeat: no-repeat;
-  background-color: #f8f7f4;
   color: #323232;
-
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  color: #323232;
+  background-image: url(../img/logo-forminput.png);
+  background-repeat: no-repeat;
+  background-color: #f8f7f4;
   border: none;
 }
 
@@ -283,16 +269,16 @@ li:hover .submit {
 
 
 .header-input-form {
-  width: 277px;
-  padding: 20px 17px;
-  border-radius: 10px;
   position: absolute;
   top: 40px;
   left: -160px;
-  display: none;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  background-color: #f8f7f4;
   z-index: 1;
+  display: none;
+  width: 277px;
+  padding: 20px 17px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .header-input-form input {
@@ -300,9 +286,9 @@ li:hover .submit {
   padding-left: 15px;
   padding-top: 16px;
   padding-bottom: 16px;
+  background-color: #ffffff;
   border-radius: 5px;
   border: 1px solid #d3d3d2;
-  background-color: #ffffff;
 }
 
 .header-button li:hover .header-input-form {
@@ -312,16 +298,17 @@ li:hover .submit {
 
 .form-button-input {
   padding: 15px 25px;
-  color: #fefefe;
-  border: none;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  color: #fefefe;
+  background-color: #e84d37;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   border-radius: 40px;
+  border: none;
   box-shadow: 0 1px 2px #ac1000;
   background-color: #e84d37;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-
 }
 
 .blok-2 {
@@ -336,11 +323,11 @@ li:hover .submit {
 }
 
 .header-input-form a {
-  color: #323232;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  }
+  color: #323232;
+}
 /*Конец стилей "Вход"*/
 
 .main-timework {
@@ -369,9 +356,8 @@ li:hover .submit {
 .slider {
   position: relative;
   margin-bottom: 47px;
-   padding: 0 26px;
+  padding: 0 26px;
   padding-top: 311px;
-
   text-align: center;
   color: #ffffff;
 }
@@ -380,7 +366,6 @@ li:hover .submit {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 27px;
-
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -389,7 +374,6 @@ li:hover .submit {
 .button {
   display: inline-block;
   padding: 12px 44px;
-
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -451,7 +435,7 @@ li:hover .submit {
 
 .bonus-wrepper {
   display: flex;
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -478,15 +462,14 @@ li:hover .submit {
   background-image: url(../img/logo-chocolate.png);
   background-repeat: no-repeat;
   background-size: cover;
-   border-radius: 10px;
+  border-radius: 10px;
 }
 
 .bonus h2 {
-  color: #ffffff;
-
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
+  color: #ffffff;
 }
 
 .bonus p {
@@ -497,19 +480,19 @@ li:hover .submit {
 }
 
 .bonus a {
+  margin-left: 330px;
   padding: 14px 22px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration:  none;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   background-color: #ffffff;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   opacity: 0.99;
   border: none;
   border-radius: 20px;
-  margin-left: 330px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  text-decoration:  none;
-}
+ }
 
 .bonus a:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
@@ -556,13 +539,13 @@ li:hover .submit {
 .heath li::before {
   content: "";
   position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
   width: 67px;
   height: 67px;
   background-image: url(../img/logo-heath.png);
   background-repeat: no-repeat;
-  top: 10px;
-  left: 0;
-  z-index: 1;
 }
 
 .heath li p:nth-child(2) {
@@ -587,12 +570,13 @@ li:hover .submit {
 	margin: 0 26px;
 	padding-left: 20px;
   padding-right: 20px;
-	border-radius: 10px;
+  font-weight: 400;
+  color: #323232;
 	background-image: url(../img/fon-waffle.jpg);
 	background-position: center;
 	background-repeat: repeat;
-	font-weight: 400;
-  color: #323232;
+	border-radius: 10px;
+
 }
 
 .activities-container-wrepper {
@@ -608,10 +592,10 @@ li:hover .submit {
 }
 
 .activities h2 {
-	color: #323232;
-  font-size: 24px;
+	font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+  color: #323232;
 }
 
 .activities-item p,
@@ -621,8 +605,8 @@ li:hover .submit {
 }
 
 .wrapper-news {
-  margin: 0 26px;
   display: flex;
+  margin: 0 26px;
   margin-top: 45px;
 }
 
@@ -631,25 +615,24 @@ li:hover .submit {
   margin-right: 13px;
   padding-left: 20px;
   padding-bottom: 40px;
-  border-radius: 15px;
   background-image: url(../img/fon-strawberry.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .newsblock p {
-  color: #323232;
   font-size: 16px;
   font-weight: 500;
-
+  color: #323232;
 }
 
 .newsblock a {
-  color: #323232;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
   text-decoration: underline;
+  color: #323232;
 }
 
 .newsblock a:hover,
@@ -664,8 +647,6 @@ li:hover .submit {
   background-image: url(../img/fon-mail.png);
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 
 .newsletter-wrapper {
@@ -676,9 +657,9 @@ li:hover .submit {
 
 
 .newsletter p {
-  color: #5a5a5a;
   font-weight: 400;
   margin-top: 10px;
+  color: #5a5a5a;
 }
 
 .newsletter-wrapper {
@@ -692,26 +673,26 @@ li:hover .submit {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 108px;
-  border-radius: 5px;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  background-color: #ffffff;
-  color: #999999;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  color: #999999;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
 .newsletter-form button {
   padding: 14px 19px;
-  color: #fefefe;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  border: none;
-  border-radius: 25px;
+  color: #fefefe;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   background-color: #e84d37;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  border: none;
+  border-radius: 25px;
 }
 
 .newsletter-form button:hover,
@@ -749,11 +730,11 @@ li:hover .submit {
   padding-left: 25px;
   padding-top: 32px;
   padding-bottom: 31px;
-  background-color: #ffffff;
-  color: #323232;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  color: #323232;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 
@@ -802,11 +783,6 @@ li:hover .submit {
   top: 174px;
   left: 292px;
 }
-
-
-
-
-
 /*Стили для Каталога*/
 
 .magnifier-catalog {
@@ -824,29 +800,33 @@ li:hover .submit {
   padding-top: 10px;
   padding-right: 17px;
   padding-bottom: 9px;
-  border-radius: 30px;
-  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
   color: #ffffff;
   background-image: url(../img/logo-basket.png);
   background-repeat: no-repeat;
   background-position: 10px 10px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
   background-color: #a1b4a9;
+  border-radius: 30px;
+  border: none;
 }
 
 .header-navigation-site .button-catalog {
-  background-color: #d07058;
-  color: #ffffff;
-  border-radius: 15px;
   padding: 9px 13px;
   text-decoration: none;
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 15px;
 }
 
 .form-basket:hover .header-button-basket {
   padding-top: 10px;
   padding-bottom: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+   color: #323232;
   background-color: #f8f7f4;
   opacity: 0.99;
   background-image: url(../img/logo-basketred.png);
@@ -854,10 +834,6 @@ li:hover .submit {
   background-repeat: no-repeat;
   border-radius: 20px;
   border: none;
-  color: #323232;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
 }
 
 .form-basket:hover:active .header-button-basket {
@@ -874,14 +850,14 @@ li:hover .submit {
   position: absolute;
   left: -300px;
   top: 40px;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  background-color: #f8f7f4;
+  z-index: 1;
   padding-left: 81px;
   padding-top: 20px;
   padding-bottom: 21px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
   display: none;
-  z-index: 1;
 }
 
 .form-basket:hover .header-form-catalog {
@@ -896,19 +872,19 @@ li:hover .submit {
 
 .header-form-catalog ul {
   display: flex;
-  color: #323232;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
-  padding: 0;
-  margin: 0;
+  color: #323232;
 }
 
 .header-form-catalog-basket-2 p,
 .header-form-catalog-basket-1 p {
-  color: #323232;
   padding-right: 15px;
+  color: #323232;
 }
 
 .header-form-catalog-basket-2 {
@@ -917,10 +893,10 @@ li:hover .submit {
 
 .header-form-catalog .header-form-catalog-basket-2 p,
 .header-form-catalog .header-form-catalog-basket-1 p {
-  color: #323232;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  color: #323232;
 }
 
 .form-header-catalog-button {
@@ -1002,6 +978,18 @@ li:hover .submit {
 .wrepper-choise-1 {
   display: flex;
   align-items: center;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 fieldset {
@@ -1029,12 +1017,53 @@ select {
 }
 
 .range {
+  padding: 12px 22px;
   border-radius: 25px;
   background-color: #aabbb1;
 }
 
+.bar {
+  width: 90px;
+height: 4px;
+margin: auto;
+background-color: #f8f7f4;
+border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+.toggle-min {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 3px;
+  height: 3px;
+  border: 10px solid  #ffffff;
+  border-radius: 50%;
+}
+
+.toggle-max {
+  position: absolute;
+  top: -10px;
+  left: 133px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  border: 10px solid  #ffffff;
+  border-radius: 50%;
+}
+
+
+
+.range-controls {
+  position: relative;
+  width: 176px;
+  height: 4px;
+  margin: auto;
+  background-color: #cbd4cd;
+}
+
 .radio {
-  padding: 8px 14px;
+  padding: 8px 18px;
   background-color: #aabbb1;
   border-radius: 20px;
 }
@@ -1060,7 +1089,7 @@ input[type="radio"] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 3px solid  #ffffff;;
+  border: 3px solid  #ffffff;
   margin-right: 0.75em;
   transition: 0.5s ease all;
 }
@@ -1079,6 +1108,12 @@ input[type="radio"] {
 
 input[type="checkbox"] {
   display: none;
+}
+
+input[type="checkbox"]:checked + span::before {
+  content: "";
+ background-image: url(../img/checkbox-on.png);
+ border: none;
 }
 
 .checkbox {
@@ -1109,13 +1144,14 @@ input[type="checkbox"] {
 .catalog-button-choice {
   display: inline-block;
   padding: 9px 30px;
-  border: 2px solid #f8faf9;
-  border-radius: 20px;
-  background-color: #9cb0a4;
-  color: #ffffff;
+  margin-left: 80px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  color: #ffffff;
+  background-color: #9cb0a4;
+  border: 2px solid #f8faf9;
+  border-radius: 20px;
 }
 
 .catalog-button-choice:hover {
@@ -1130,10 +1166,11 @@ input[type="checkbox"] {
 }
 
 .main-catalog h1 {
+  margin: 0;
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .main-catalog-list a {
@@ -1167,13 +1204,15 @@ input[type="checkbox"] {
   flex-direction: column;
   align-items: center;
   padding: 0px 10px;
+  padding-bottom: 85px;
+  border-radius: 10px;
   z-index: 2;
 }
 
 .main-catalog-list li p:nth-child(2) {
   position: absolute;
-  top: 60%;
-  left: 0px;
+  top: 210px;
+  left: 0;
 }
 
 .main-catalog-list img {
@@ -1191,10 +1230,11 @@ input[type="checkbox"] {
   padding: 13px 17px;
   color: #fefefe;
   position: absolute;
-  top: 357px;
+  bottom: 20px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  text-decoration: none;
   box-shadow: 0 1px 2px #ac1000;
   background-color: #e84d37;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
@@ -1204,7 +1244,17 @@ input[type="checkbox"] {
 
 .main-catalog-list li:hover .quickly {
   display: block;
-   z-index: 2;
+  z-index: 2;
+}
+
+.main-catalog-list li:hover .quickly:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.main-catalog-list li:hover .quickly:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .wrepper-main-catalog {
