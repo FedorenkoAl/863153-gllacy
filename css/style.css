@@ -203,7 +203,9 @@ li:hover .magnifier  {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #999999;
+  color: #2e2e2e;
+  font-weight: bold;
+  font-family: "Roboto-Bold", sans-serif;
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -218,10 +220,10 @@ li:hover .magnifier  {
   background-color: #ffffff;
 }
 
-.header-button-search-form input:active,
-.header-input-form input:active,
-.newsletter-form input:active,
-.popup-form input:active {
+.header-button-search-form input: focus,
+.header-input-form input: focus,
+.newsletter-form input: focus,
+.popup-form input: focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
   background-color: #ffffff;
 }
@@ -313,6 +315,9 @@ li:hover .submit {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #ffffff;
+  color: #2e2e2e;
+  font-weight: bold;
+  font-family: "Roboto-Bold", sans-serif;
   border-radius: 5px;
   border: 2px solid #d3d3d2;
   outline: none;
@@ -711,9 +716,10 @@ li:hover .submit {
   padding-bottom: 15px;
   padding-right: 108px;
   font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
-  color: #999999;
+  color: #2e2e2e;
+  font-weight: bold;
+  font-family: "Roboto-Bold", sans-serif;
   background-color: #ffffff;
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -898,7 +904,6 @@ li:hover .submit {
   background-color: #f8f7f4;
   border-radius: 5px;
   display: none;
-  outline: 1px solid red;
 }
 
 .form-basket:hover .header-form-catalog {
@@ -1008,7 +1013,7 @@ li:hover .submit {
 
 .timework-time {
   margin: 0;
-  margin-bottom: 4px;
+  padding-left: 19px;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -1094,6 +1099,22 @@ select:hover {
   border-radius: 50%;
 }
 
+.toggle-min:hover,
+.toggle-max:hover {
+  border: 11px solid #ffffff;
+  transform: scale(1.2);
+}
+
+.toggle-min:hover {
+  top: -12px;
+  left: 30px;
+}
+
+.toggle-max:hover {
+  left: 131px;
+   top: -10px;
+}
+
 .toggle-max {
   position: absolute;
   top: -10px;
@@ -1102,7 +1123,7 @@ select:hover {
   height: 3px;
   background-color: #ACACAC;
   border-radius: 50%;
-  border: 10px solid  #ffffff;
+  border: 9px solid  #ffffff;
   border-radius: 50%;
 }
 
@@ -1124,9 +1145,7 @@ select:hover {
   position: relative;
 }
 
-.radio span::before:hover {
-  opacity: 1;
-}
+
 
 input[type="radio"] {
   border: 0;
@@ -1140,7 +1159,8 @@ input[type="radio"] {
 }
 
 [type="radio"] + span::before {
-  content: '';
+  content: "";
+  position: relative;
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -1152,7 +1172,7 @@ input[type="radio"] {
 }
 
 [type="radio"]:checked + span::after {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   top: 0px;
@@ -1161,6 +1181,27 @@ input[type="radio"] {
   height: 8px;
   border-radius: 50%;
   background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.radio label:hover span::before,
+.checkbox label:hover span::before  {
+  opacity: 1;
+}
+
+.radio label:hover span::after,
+.checkbox label:hover span::after  {
+  opacity: 1;
+}
+
+.radio input:disabled + span::before,
+.checkbox input:disabled + span::befor {
+  opacity: 0.5;
+}
+
+.radio input:disabled + span::after,
+.checkbox input:disabled + span::after {
+  opacity: 0.5;
 }
 
 input[type="checkbox"] {
@@ -1180,21 +1221,22 @@ input[type="checkbox"]:checked + span::before {
 }
 
 .checkbox span::before {
-  content: " ";
+  content: "";
   position: relative;
   display: inline-block;
   position: relative;
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 20px;
   margin-left: 3px;
-  margin-right: 20px;
+  margin-right: 10px;
   text-align: center;
   text-indent: 0px;
   background-image: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;
   border-radius: 5px;
   border-image: initial;
   vertical-align: middle;
-
+  opacity: 0.8;
 }
 
 .catalog-button-choice {
@@ -1474,8 +1516,11 @@ input[type="checkbox"]:checked + span::before {
   width: 267px;
   height: 45px;
   padding-left: 15px;
+  color: #2e2e2e;
+  font-weight: bold;
+  font-family: "Roboto-Bold", sans-serif;
   background-color: #ffffff;
-  border: 2px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
   outline: none;
 }
@@ -1488,6 +1533,7 @@ input[type="checkbox"]:checked + span::before {
   padding-left: 15px;
   background-color: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
   outline: none;
 }
 
