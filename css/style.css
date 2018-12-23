@@ -220,10 +220,10 @@ li:hover .magnifier  {
   background-color: #ffffff;
 }
 
-.header-button-search-form input: focus,
-.header-input-form input: focus,
-.newsletter-form input: focus,
-.popup-form input: focus {
+.header-button-search-form input:focus,
+.header-input-form input:focus,
+.newsletter-form input:focus,
+.popup-form input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
   background-color: #ffffff;
 }
@@ -1090,7 +1090,7 @@ select:hover {
 
 .toggle-min {
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 30px;
   width: 3px;
   height: 3px;
@@ -1101,23 +1101,15 @@ select:hover {
 
 .toggle-min:hover,
 .toggle-max:hover {
-  border: 11px solid #ffffff;
+
   transform: scale(1.2);
 }
 
-.toggle-min:hover {
-  top: -12px;
-  left: 30px;
-}
 
-.toggle-max:hover {
-  left: 131px;
-   top: -10px;
-}
 
 .toggle-max {
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 133px;
   width: 3px;
   height: 3px;
@@ -1161,6 +1153,7 @@ input[type="radio"] {
 [type="radio"] + span::before {
   content: "";
   position: relative;
+  top: 5px;
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -1175,7 +1168,7 @@ input[type="radio"] {
   content: "";
   position: absolute;
   display: inline-block;
-  top: 0px;
+  top: 5px;
   left: 6px;
   width: 8px;
   height: 8px;
@@ -1195,7 +1188,7 @@ input[type="radio"] {
 }
 
 .radio input:disabled + span::before,
-.checkbox input:disabled + span::befor {
+.checkbox input:disabled + span::before {
   opacity: 0.5;
 }
 
@@ -1224,7 +1217,6 @@ input[type="checkbox"]:checked + span::before {
   content: "";
   position: relative;
   display: inline-block;
-  position: relative;
   width: 25px;
   height: 20px;
   margin-left: 3px;
@@ -1233,8 +1225,6 @@ input[type="checkbox"]:checked + span::before {
   text-indent: 0px;
   background-image: url(../img/checkbox-off.png);
   background-repeat: no-repeat;
-  border-radius: 5px;
-  border-image: initial;
   vertical-align: middle;
   opacity: 0.8;
 }
@@ -1513,28 +1503,37 @@ input[type="checkbox"]:checked + span::before {
 }
 
 .popup-form input {
-  width: 267px;
-  height: 45px;
+ height: 45px;
   padding-left: 15px;
+  padding-right: 142px;
   color: #2e2e2e;
   font-weight: bold;
   font-family: "Roboto-Bold", sans-serif;
   background-color: #ffffff;
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 2px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
   outline: none;
 }
 
 .popup-form textarea {
-  width: 428px
+  height: 155px;
   padding-top: 13px;
   padding-right: 238px;
-  padding-bottom: 135px;
   padding-left: 15px;
   background-color: #ffffff;
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 2px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
   outline: none;
+}
+
+.popup-form textarea:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  background-color: #ffffff;
+}
+
+.popup-form textarea:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  background-color: #ffffff;
 }
 
 .popup-form button {
