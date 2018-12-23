@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
+  <body>
+  <div class="wrepper-sliader">
       <header class="header">
         <div class="header-container">
           <div class="header-container-1">
@@ -32,7 +34,7 @@
   			    <ul class="header-button">
   			      <li class="header-button-search">
                 <button class="magnifier"></button>
-                  <form class="header-button-search-form" action="#" method="post"> <input type="text" name="name" placeholder="Что ищем?">
+                  <form class="header-button-search-form" action="#" method="post"> <input type="search" name="search" placeholder="Что ищем?">
   		            </form>
               </li>
   		        <li>
@@ -62,6 +64,81 @@
   			  </div>
       </div>
     </header>
+    <main>
+       <div class="main-timework">
+        <p class="timework-time">с 10 до 20,ежедневно</p>
+        <p class="timework-tell">8 812 450-25-25</p>
+      </div>
+      <section class="slider">
+        <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+         <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+        </section>
+         <section class="bonus">
+        <div class="bonus-1">
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим<br> в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="#">Хочу варенье!</a>
+        </div>
+        <div class="bonus-2">
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br> вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="want" href="#">Хочу шоколадки!</a>
+        </div>
+       </section>
+        <div class="heath-wrepper">
+      <section class="main-heath">
+        <ul class="heath">
+          <li>
+            <p> <img src="img/hit-orange .jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </p>
+            <p><b>310</b><span>₽/кг</span></p>
+            <a href="#">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</a>
+          </li>
+          <li>
+            <p><img src="img/hit- coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            </p>
+            <p><b>380</b><span>₽/кг</span></p>
+            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </li>
+          <li>
+            <p><img src="img/hit-strawberry .jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            </p>
+            <p><b>355</b><span>₽/кг</span></p>
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </li>
+          <li>
+            <p><img src="img/hit-cream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            </p>
+            <p><b>415</b><span>₽/кг</span></p>
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
     <div class="wrepper">
     	<section class="activities">
 
@@ -112,6 +189,21 @@
   			</div>
   		</div>
   	</div>
+    <div id="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abcbd2b1ab0a132b1d3510209f07b9cf0f15bc3f9d20354468c7899693640295a&amp;width=100%25&amp;height=440&amp;lang=ru_UA&amp;scroll=true"></script>
+
+      <div class="address">
+        <p>Адрес главного офиса<br>
+        и офлайн-магазина:</p>
+        <p><h2>ул.Большая  Конюшенная 19/8,Санкт-Петербург</h2></p>
+        <p>Для заказов по телефону:</p>
+        <p class="tell">8 812 450-25-25<br>
+        <span class="time">(с 10 до 20 ежедневно)</span></p>
+       <button class="address-button" type="submit">Форма обратной связи</button>
+
+      </div>
+    </div>
+  </main>
   	  <footer class="footer">
   	    <div class="wrapper-footer">
   				<div class="footer-social">
@@ -143,13 +235,13 @@
   		      </ul>
   		    </div>
   		    <div class="footer-copyright">
-  					<img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="HTML Academy">
-  		      <p>Сделано в HTML Academy © 2017
-  		    	</p>
+  					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="HTML Academy"></a>
+  		      <a href="https://htmlacademy.ru/intensive/htmlcss"><p>Сделано в HTML Academy © 2017
+  		    	</p></a>
   		    </div>
   	    </div>
   	  </footer>
-
+    </div>
   		  <div class="popup">
   				<form class="popup-form" action="#" method="post">
   		      <h2>Мы обязателно Вам ответим!</h2>
@@ -157,12 +249,13 @@
   		      <input type="text" name="name" placeholder="Как Вас зовут?">
   		      </p>
   		      <p><input type="text" name="mail" placeholder="Ваша почта для ответа?"></p>
-  					<p><textarea rows="5" cols="20" placeholder="Напишите что-нибудь.."></textarea>
+  					<p><textarea rows="5" cols="25" placeholder="Напишите что-нибудь.."></textarea>
   		      </p>
   		      <button type="submit">Отправить</button>
-  					<div class="close"></div>
+  					<button class="close" type="submit">Закрыть</button>
   		    </form>
   			</div>
+        <script src="js/script.js"></script>
   		</body>
   	</html>
 
