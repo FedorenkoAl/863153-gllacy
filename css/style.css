@@ -1032,6 +1032,11 @@ li:hover .submit {
   padding: 5px 15px;
 }
 
+.wrepper-choise-1 fieldset {
+  padding: 0;
+  border: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1126,7 +1131,9 @@ select:hover {
 }
 
 .radio {
-  padding: 2px 18px;
+  height: 37px;
+  padding: 0px 18px;
+  margin-left: 10px;
   background-color: #aabbb1;
   border-radius: 20px;
 }
@@ -1221,7 +1228,7 @@ input[type="checkbox"]:checked + span::before {
   width: 25px;
   height: 20px;
   margin-left: 3px;
-  margin-right: 10px;
+  margin-right: 6px;
   text-align: center;
   text-indent: 0px;
   background-image: url(../img/checkbox-off.png);
@@ -1234,7 +1241,6 @@ input[type="checkbox"]:checked + span::before {
   display: inline-block;
   min-width: 143px;
   padding: 9px 10px;
-  margin-left: 17px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -1255,6 +1261,7 @@ legend {
 }
 
 .form-title {
+  padding-left: 15px;
  font-size: 14px;
  font-weight: 400;
  line-height: 16px;
@@ -1534,7 +1541,7 @@ legend {
 }
 
 .popup-form textarea {
-  width: 394;
+  width: 394px;
   height: 155px;
   padding-top: 13px;
   padding-right: 15px;
