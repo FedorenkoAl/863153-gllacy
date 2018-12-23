@@ -1105,8 +1105,6 @@ select:hover {
   transform: scale(1.2);
 }
 
-
-
 .toggle-max {
   position: absolute;
   top: -8px;
@@ -1128,16 +1126,19 @@ select:hover {
 }
 
 .radio {
-  padding: 4px 18px;
+  padding: 2px 18px;
   background-color: #aabbb1;
   border-radius: 20px;
 }
 
 .radio label {
   position: relative;
+  margin-right: 12px;
 }
 
-
+.checkbox label {
+  margin-right: 15px;
+}
 
 input[type="radio"] {
   border: 0;
@@ -1155,8 +1156,8 @@ input[type="radio"] {
   position: relative;
   top: 5px;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 3px solid  #ffffff;
   margin-right: 0.75em;
@@ -1169,7 +1170,7 @@ input[type="radio"] {
   position: absolute;
   display: inline-block;
   top: 5px;
-  left: 6px;
+  left: 7px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1241,6 +1242,23 @@ input[type="checkbox"]:checked + span::before {
   background-color: #9cb0a4;
   border: 2px solid #f8faf9;
   border-radius: 20px;
+}
+
+
+legend {
+  padding-left: 15px;
+  padding-bottom: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+}
+
+.form-title {
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 16px;
+
 }
 
 .catalog-button-choice:hover {
@@ -1487,8 +1505,8 @@ input[type="checkbox"]:checked + span::before {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 478px;
-  padding-left: 39px;
+  width: 453px;
+  padding-left: 24px;
   padding-bottom: 27px;
   transform: translate(-50%, -50%);
   border-radius: 15px;
@@ -1516,9 +1534,10 @@ input[type="checkbox"]:checked + span::before {
 }
 
 .popup-form textarea {
+  width: 394;
   height: 155px;
   padding-top: 13px;
-  padding-right: 238px;
+  padding-right: 15px;
   padding-left: 15px;
   background-color: #ffffff;
   border: 2px solid rgba(178, 178, 178, 0.52);
