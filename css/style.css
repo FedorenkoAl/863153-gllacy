@@ -1054,6 +1054,7 @@ fieldset {
 
 .fillers {
   display: inline-block;
+  margin-top: 20px;
 }
 
 select {
@@ -1253,7 +1254,7 @@ input[type="checkbox"]:checked + span::before {
 
 legend {
   padding-left: 15px;
-  padding-bottom: 3px;
+  padding-bottom: px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
