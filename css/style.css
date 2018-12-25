@@ -6,6 +6,12 @@ body {
   line-height: 22px;
   text-transform: none;
   color: #ffffff;
+}
+
+.wrepper-sliader-catalog {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #849d8f;
 }
 
@@ -387,6 +393,8 @@ li:hover .submit {
   background-image: url("../img/slider-item1.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-color: #849d8f;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .slider-list {
@@ -468,10 +476,58 @@ li:hover .submit {
   font-size: 0;
 }
 
-#slide2,
-#slide3 {
+.slide {
   display: none;
 }
+
+#product-1:checked ~ .wrepper-sliader #slide1,
+#product-2:checked ~ .wrepper-sliader #slide2,
+#product-3:checked ~ .wrepper-sliader #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .wrepper-sliader label[for="product-1"],
+#product-2:checked ~ .wrepper-sliader label[for="product-2"],
+#product-3:checked ~ .wrepper-sliader label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+#product-1:checked ~ .wrepper-sliader {
+  background-color: #849d8f;
+  background-image: url("../img/slider-item1.jpg");
+}
+
+#product-2:checked ~ .wrepper-sliader {
+  background-color: #8996a6;
+  background-image: url(../img/slider-item2.jpg);
+}
+
+#product-3:checked ~ .wrepper-sliader {
+  background-color: #9d8b84;
+  background-image: url(../img/slider-item3.jpg);
+}
+
+.wrepper-sliader::before,
+.wrepper-sliader::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.wrepper-sliader::before {
+  background-image: url("../img/slider-item2.png");
+}
+
+.wrepper-sliader::after {
+  background-image: url("../img/slider-item3.png");
+}
+
+
+
+/*#slide2,
+#slide3 {
+  display: none;
+}*/
 
 /*Стили для section class="bonus"*/
 
@@ -1037,6 +1093,11 @@ li:hover .submit {
   border: 0;
 }
 
+.roolt label{
+  display: flex;
+  flex-direction: column;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1418,9 +1479,6 @@ legend {
 
 /* Стили для footer*/
 
-.footer {
-  /*margin-top: 20px;*/
-}
 
 .wrapper-footer {
 	margin: 0 26px;
@@ -1487,12 +1545,23 @@ legend {
 
 .footer-documentation ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 320px;
 }
 
-.wrapper-documentation-1 {
-  margin-right: 20px;
+.footer-documentation ul li:nth-child(2) {
+  order: 1;
 }
+
+.footer-documentation ul li:nth-child(3) {
+  margin-left: 30px;
+}
+
+.footer-documentation ul li:nth-child(4) {
+  order: 3;
+  margin-left: 50px;
+}
+
 
 .footer-copyright {
   display: flex;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <div class="wrepper-sliader-catalog">
   <header class="header">
     <div class="header-container">
       <div class="header-container-1">
@@ -32,7 +33,7 @@
             <button class="header-button-input">
             вход
             </button>
-            <form class="header-input-form" action="" method="post">
+            <form class="header-input-form" action="$" method="post">
               <p><input type="text" name="name" placeholder="Электронная почта">
               </p>
               <p><input type="text" name="passead" placeholder="Пароль"></p>
@@ -95,15 +96,16 @@
         <fieldset>
           <legend class="visually-hidden">Выбираем мороженно</legend>
            <div class="wrepper-choise-1">
-            <label>
-              <span class="form-title">Сортировка:</span>
-              <div class="popul">
-              <select>
-                <option>по популярности</option>
-              </select>
+            <div class="roolt">
+              <label>
+                <span class="form-title">Сортировка:</span>
+                <select>
+                  <option>по популярности</option>
+                </select>
+              </label>
             </div>
-            </label>
-            <label>
+
+              <div class="root-1">
               <span class="form-title">Цена: 100 руб. – 500 руб.</span>
               <div class="range">
                 <div class="range-controls">
@@ -114,8 +116,8 @@
                     </div>
                   </div>
               </div>
+            </div>
 
-            </label>
             <fieldset>
                <span class="form-title">Жирность:</span>
               <div class="radio">
@@ -277,14 +279,10 @@
         </div>
       <div class="footer-documentation">
         <ul>
-          <div class="wrapper-documentation-1">
-            <li><a href="#">Для поставщиков</a></li>
-            <li><a href="#">О производств</a></li>
-          </div>
-            <div class="wrapper-documentation-2">
-              <li><a href="#">Наши документы</a></li>
-              <li><a href="#">Экологические стандарты</a></li>
-            </div>
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производств</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
       <div class="footer-copyright">
@@ -294,17 +292,6 @@
       </div>
      </div>
     </footer>
-    <div class="popup">
-      <h2>Мы обязателно Вам ответим!</h2>
-      <form action="" method="">
-        <p>
-          <input type="text" name="name" placeholder="Как Вас зовут?"></p>
-          <p><input type="text" name="mail" placeholder="Ваша почта для ответа?"></p>
-          <p><textarea rows="5" cols="20" placeholder="Напишите что-нибудь.."></textarea>
-        </p>
-        <button type="button">Закрыть</button>
-        <button type="submit">Отправить</button>
-      </form>
     </div>
   </body>
 </html>
