@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
     <input class="visually-hidden" type="radio" id="product-2" name="toggle">
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-    <div class="wrepper-sliader">
+    <div class="wrapper-sliader">
       <header class="header">
         <div class="header-container">
           <div class="header-container-1">
@@ -21,8 +20,8 @@
                 <li class="catalog-saite">
                   <a href="catalog.html">Каталог</a>
                   <ul class="header-navigation-list">
-                    <li>Новинки</li>
-                    <li><a href="#">Сливочное</a></li>
+                    <li><a class="novelties" href="#">Новинки</a></li>
+                    <li><a href="catalog.html">Сливочное</a></li>
                     <li><a href="#">Щербеты</a></li>
                     <li><a href="#">Фруктовый лед</a></li>
                     <li><a href="#">Мелорин</a></li>
@@ -48,14 +47,10 @@
                 <p><input type="text" name="name" placeholder="Электронная почта">
               </p>
               <p><input type="text" name="passead" placeholder="Пароль"></p>
-              <div class="blok-2">
-                <p>
-                  <button class="form-button-input" type="submit">Войти</button>
-                </p>
-                <div class="blok-1">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </div>
+              <button class="form-button-input" type="submit">Войти</button>
+              <div class="blok-1">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
               </div>
             </form>
           </li>
@@ -110,42 +105,46 @@
         <a href="#">Хочу шоколадки!</a>
       </div>
     </section>
-    <div class="heath-wrepper">
+    <div class="heath-wrapper">
       <section class="main-heath">
         <ul class="heath">
           <li>
-            <p> <img src="img/hit-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            </p>
-            <p><b>310</b><span>₽/кг</span></p>
-            <a href="#">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</a>
+            <img src="img/hit-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p><b>310</b><span>₽</span><span class="kilogram">/кг</span></p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <p class="substrate"></p>
+            <a class="quickly" href="#">Быстрый просмотр</a>
           </li>
           <li>
-            <p><img src="img/hit-coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            </p>
-            <p><b>380</b><span>₽/кг</span></p>
+            <img src="img/hit-coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p><b>380</b><span>₽</span><span class="kilogram">/кг</span></p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <p class="substrate"></p>
+            <a class="quickly" href="#">Быстрый просмотр</a>
           </li>
           <li>
-            <p><img src="img/hit-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            </p>
-            <p><b>355</b><span>₽/кг</span></p>
+            <img src="img/hit-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p><b>355</b><span>₽</span><span class="kilogram">/кг</span></p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <p class="substrate"></p>
+            <a class="quickly" href="#">Быстрый просмотр</a>
           </li>
           <li>
-            <p><img src="img/hit-cream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            </p>
-            <p><b>415</b><span>₽/кг</span></p>
+            <img src="img/hit-cream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p><b>415</b><span>₽</span><span class="kilogram">/кг</span></p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <p class="substrate"></p>
+            <a class="quickly" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
     </div>
-    <div class="wrepper">
+    <div class="wrapper">
       <section class="activities">
         <div class="activities-container">
-          <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-          <div class="activities-container-wrepper">
-            <div class="activities-container-wrepper-1">
+          <h2>Магазин Глэйси — это  онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+          <div class="activities-container-wrapper">
+            <div class="activities-container-wrapper-1">
               <div class="activities-item">
                 <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
                 </p>
@@ -155,7 +154,7 @@
                 </p>
               </div>
             </div>
-            <div class="activities-container-wrepper-2">
+            <div class="activities-container-wrapper-2">
               <div class="activities-item-3">
                 <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
                 </p>
@@ -185,7 +184,7 @@
         </div>
       </div>
     </div>
-    <div id="map">
+    <div class="wrapper-map">
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abcbd2b1ab0a132b1d3510209f07b9cf0f15bc3f9d20354468c7899693640295a&amp;width=100%25&amp;height=440&amp;lang=ru_UA&amp;scroll=true"></script>
       <div class="address">
         <p class="address-texte">Адрес главного офиса
@@ -194,7 +193,7 @@
         <p class="till-texte">Для заказов по телефону:</p>
         <p class="tell">8 812 450-25-25</p>
         <p class="time">(с 10 до 20 ежедневно)</p>
-        <button class="address-button" type="submit">Форма обратной связи</button>
+        <a href="form.html" class="address-button">Форма обратной связи</a>
       </div>
     </div>
   </main>
@@ -219,7 +218,7 @@
       <div class="footer-documentation">
         <ul>
           <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производств</a></li>
+          <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
