@@ -5,10 +5,10 @@
     <title>Каталог "Глэйси"</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-   <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper-sliader-catalog">
+    <div class="wrapper-catalog">
       <header class="header-catalog">
         <div class="header-container-catalog">
           <div class="header-catalog-container-1">
@@ -89,68 +89,67 @@
     <section class="main-catalog-choice">
       <h1>Сливочное мороженное</h1>
       <form action="#"  method="post">
-        <fieldset class="catalog-choice">
-          <legend class="visually-hidden">Выбираем мороженно</legend>
-          <div class="wrapper-choise-1">
-            <div class="roolt">
-              <p><label for="sort">Сортировка:</label></p>
-              <select id="sort">
-                <option>по популярности</option>
-              </select>
-            </div>
-            <div class="root-1">
-              <p class="form-title">Цена: 100 руб. – 500 руб.</p>
-              <div class="range">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                    <div class="toggle-min"></div>
-                    <div class="toggle-max"></div>
-                  </div>
+        <h3 class="visually-hidden">Выбираем мороженно</h3>
+        <div class="wrapper-choise-1">
+          <div class="roolt">
+            <p><label for="sort">Сортировка:</label></p>
+            <select id="sort">
+              <option>по популярности</option>
+            </select>
+          </div>
+          <div class="root-1">
+            <p class="form-title">Цена: 100 руб. – 500 руб.</p>
+            <div class="range">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                  <div class="toggle-min"></div>
+                  <div class="toggle-max"></div>
                 </div>
               </div>
             </div>
-            <fieldset class="wrap-radio">
-              <p class="form-title">Жирность:</p>
-              <div class="radio">
-                <label class="fat">
-                  <input type="radio" name="fatness" value="0" disabled>
-                  <span>0%</span>
-                </label>
-                <label class="fat">
-                  <input type="radio" name="fatness" value="10" checked>
-                  <span>до 10%</span>
-                </label>
-                <label class="fat">
-                  <input type="radio" name="fatness" value="30">
-                  <span> до 30%</span>
-                </label>
-                <label class="fat">
-                  <input type="radio" name="fatness" value="0">
-                  <span>выше 30%</span>
-                </label>
-              </div>
-            </fieldset>
           </div>
-          <fieldset class="fillers">
-            <legend>Наполнители:</legend>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" checked> <span>шоколадные</span>
+          <div class="wrap-radio">
+            <p class="form-title">Жирность:</p>
+            <div class="radio">
+              <label class="fat">
+                <input type="radio" name="fatness" value="0" disabled>
+                <span>0%</span>
               </label>
+              <label class="fat">
+                <input type="radio" name="fatness" value="10" checked>
+                <span>до 10%</span>
+              </label>
+              <label class="fat">
+                <input type="radio" name="fatness" value="30">
+                <span> до 30%</span>
+              </label>
+              <label class="fat">
+                <input type="radio" name="fatness" value="0">
+                <span>выше 30%</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="fillers">
+          <p>Наполнители:</p>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" checked> <span>шоколадные</span>
+            </label>
+            <label>
+              <input type="checkbox" checked> <span>сахарные присыпки</span></label>
               <label>
-                <input type="checkbox" checked> <span>сахарные присыпки</span></label>
+                <input type="checkbox" disabled> <span>фрукты</span></label>
                 <label>
-                  <input type="checkbox" disabled> <span>фрукты</span></label>
+                  <input type="checkbox"> <span>сиропы</span></label>
                   <label>
-                    <input type="checkbox"> <span>сиропы</span></label>
-                    <label>
-                      <input type="checkbox"> <span>джемы</span>
-                    </label>
-                  </div>
-                </fieldset>
-                <button class="catalog-button-choice" type="submit">Применить</button>
-              </fieldset>
+                    <input type="checkbox"> <span>джемы</span>
+                  </label>
+                </div>
+              </div>
+              <button class="catalog-button-choice" type="submit">Применить</button>
+
             </form>
           </section>
           <div class="main-catalog-list-wrapper">
@@ -158,97 +157,85 @@
               <li>
                 <p><img src="img/creamy-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </p>
-                <p><b>310</b><span><b>₽</b>/кг</span></p>
+                <p><b>310</b><span>/кг</span></p>
                 <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-                <p class="substrate"></p>
                 <a class="quickly" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 </p>
-                <p><b>380</b><span><b>₽</b>/кг</span></p>
+                <p><b>380</b><span>/кг</span></p>
                 <p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
-                <p class="substrate"></p>
                 <a class="quickly" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 </p>
-                <p><b>355</b><span><b>₽</b>/кг</span></p>
+                <p><b>355</b><span>/кг</span></p>
                 <p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
-                <p class="substrate"></p>
                 <a class="quickly" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-cream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 </p>
-                <p><b>415</b><span><b>₽</b>/кг</span></p>
+                <p><b>415</b><span>/кг</span></p>
                 <p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
-                <p class="substrate"></p>
                 <a class="quickly" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-cowberry.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
                 </p>
-                <p><b>325</b><span><b>₽</b>/кг</span></p>
+                <p><b>325</b><span>/кг</span></p>
                 <p><a href="#">Сливочное с брусничным джемом</a></p>
-                <p class="substrate-1"></p>
                 <a class="quickly-1" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-blueberry.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
                 </p>
-                <p><b>410</b><span><b>₽</b>/кг</span></p>
+                <p><b>410</b><span>/кг</span></p>
                 <p><a href="#">Сливочно-черничное с цельными ягодами черники</a></p>
-                <p class="substrate-1"></p>
                 <a class="quickly-1" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
                 </p>
-                <p><b>375</b><span><b>₽</b>/кг</span></p>
+                <p><b>375</b><span>/кг</span></p>
                 <p><a href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
-                <p class="substrate-1"></p>
                 <a class="quickly-1" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-chocolatechip.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
                 </p>
-                <p><b>320</b><span><b>₽</b>/кг</span></p>
+                <p><b>320</b><span>/кг</span></p>
                 <p><a href="#">Сливочное с шоколадной стружкой</a></p>
-                <p class="substrate-1"></p>
                 <a class="quickly-1" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-vanilla.jpg" width="267" height="267" alt="ливочно-ванильное с кусочками шоколада">
                 </p>
-                <p><b>440</b><span><b>₽</b>/кг</span></p>
+                <p><b>440</b><span>/кг</span></p>
                 <p><a href="#">Сливочно-ванильное с кусочками шоколада</a></p>
-                <p class="substrate-1"></p>
                 <a class="quickly-1" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-menthol.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
                 </p>
-                <p><b>435</b><span><b>₽</b>/кг</span></p>
+                <p><b>435</b><span>/кг</span></p>
                 <p><a href="#">Сливочноe с ментоловым сиропом</a>
-                <p class="substrate-1"></p>
                 <a class="quickly-1" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-piecechocolate.pg.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
                 </p>
-                <p><b>355</b><span><b>₽</b>/кг</span></p>
+                <p><b>355</b><span>/кг</span></p>
                 <p><a href="#">Сливочное с кусочками черного шоколада</a></p>
-                <p class="substrate-1"></p>
                 <a class="quickly-1" href="#">Быстрый просмотр</a>
               </li>
               <li>
                 <p><img src="img/creamy-mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
                 </p>
-                <p><b>420</b><span><b>₽</b>/кг</span></p>
+                <p><b>420</b><span>/кг</span></p>
                 <p><a href="#">Сливочное с мятным сиропом</a></p>
-                <p class="substrate-1"></p>
                 <a class="quickly-1" href="#">Быстрый просмотр</a>
               </li>
             </ul>
