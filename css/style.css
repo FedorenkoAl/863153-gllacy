@@ -93,7 +93,6 @@ a{
 
     padding: 0;
 
-
     align-items: center;
 }
 
@@ -136,14 +135,14 @@ a{
 
 .catalog{
     margin: 0;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
 }
 
 .header-navigation-catalog .button-catalog{
     padding-top: 8px;
     padding-right: 15px;
     padding-bottom: 7px;
-    padding-left: 14px;
+    padding-left: 13px;
 
     text-decoration: none;
 
@@ -179,8 +178,8 @@ a{
 }
 
 .header-catalog .header-container-2 li{
-  height: 35px;
-  padding-bottom: 4px;
+    height: 35px;
+    padding-bottom: 4px;
 }
 
 .header .header-container-2 li{
@@ -227,9 +226,12 @@ a{
 
 .header-navigation-list li{
     width: 143px;
-
     padding-top: 10px;
     padding-bottom: 8px;
+}
+
+.header-navigation-list li:nth-child(1){
+    border-bottom: 1px solid #d1d0ce;
 }
 
 .header-navigation-list a{
@@ -748,7 +750,7 @@ li:hover .submit{
 .bonus-2{
     width: 545px;
     padding-top: 16px;
-    padding-left: 21px;
+    padding-left: 24px;
 
     border-radius: 10px;
     background-color: #663e30;
@@ -840,7 +842,7 @@ li:hover .submit{
 }
 
 .main-heath{
-    margin-bottom: 35px;
+    margin-bottom: 37px;
 }
 
 .heath{
@@ -986,8 +988,8 @@ li:hover .submit{
 
     width: 476px;
     margin-top: 22px;
-    padding-bottom: 21px;
-    padding-left: 74px;
+    padding-bottom: 23px;
+    padding-left: 77px;
 }
 
 .activities-container-wrapper-2{
@@ -996,7 +998,7 @@ li:hover .submit{
 
     width: 476px;
     margin-top: 22px;
-    padding-left: 92px;
+    padding-left: 90px;
 }
 
 .activities h2{
@@ -1005,10 +1007,22 @@ li:hover .submit{
     line-height: 28px;
 
     margin: 0;
-    margin-top: 31px;
-    margin-left: 20px;
+    margin-top: 28px;
+    margin-left: 21px;
 
     color: #323232;
+}
+
+.con{
+    padding-left: 4px;
+}
+
+.con-1{
+    padding-left: 3px;
+}
+
+.con-2{
+    padding-left: 4px;
 }
 
 .activities-item p,
@@ -1027,21 +1041,21 @@ li:hover .submit{
 .wrapper-news{
     display: flex;
 
-    margin-top: 45px;
+    margin-top: 43px;
 }
 
 .newsblock{
-    width: 550px;
+    width: 544px;
     height: 200px;
-    margin-right: 20px;
+    margin-right: 24px;
     padding-top: 21px;
-    padding-left: 18px;
+    padding-left: 20px;
 
     border-radius: 15px;
     background-color: #fff;
     background-image: url(../img/fon-strawberry.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: background-size: cover;
 }
 
 .newsblock p{
@@ -1076,8 +1090,8 @@ li:hover .submit{
 
 
 .newsletter{
-    width: 560px;
-    padding: 4px;
+    width: 558px;
+    padding: 6px;
 
     border-radius: 15px;
     background-image: url(../img/fon-mail.png);
@@ -1093,13 +1107,26 @@ li:hover .submit{
 .newsletter p{
     font-weight: 400;
 
+    width: 506px;
     margin: 0;
-    margin-top: 4px;
-    padding-top: 24px;
+    margin-top: px;
+    padding-top: 26px;
     padding-bottom: 35px;
     padding-left: 26px;
 
     color: #5a5a5a;
+}
+
+.nev{
+    padding-left: 3px;
+}
+
+.nev-1{
+    padding-left: 4px;
+}
+
+.nev-3{
+    padding-left: 2px;
 }
 
 
@@ -1114,10 +1141,10 @@ li:hover .submit{
     width: 368px;
     margin-top: 0;
     margin-right: 6px;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     margin-left: 24px;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 9px;
     padding-left: 11px;
 
     vertical-align: baseline;
@@ -1137,7 +1164,7 @@ li:hover .submit{
     display: inline-block;
 
     padding-top: 10px;
-    padding-right: 19px;
+    padding-right: 16px;
     padding-bottom: 10px;
     padding-left: 19px;
 
@@ -1179,7 +1206,7 @@ li:hover .submit{
     line-height: 20px;
 
     position: absolute;
-    top: 64px;
+    top: 66px;
     left: 900px;
 
     width: 280px;
@@ -1204,6 +1231,17 @@ li:hover .submit{
 
     margin: 0;
 }
+
+.adres{
+    padding-left: 5px;
+}
+
+.adres-1{
+    padding-left: 5px;
+}
+
+
+
 
 .till-texte{
     margin: 0;
@@ -1276,7 +1314,7 @@ li:hover .submit{
 
     padding-top: 10px;
     padding-right: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 9px;
     padding-left: 46px;
 
     color: #fff;
@@ -1391,7 +1429,6 @@ li:hover .submit{
     line-height: 16px;
 
     width: 215px;
-
     margin-right: 32px;
     margin-left: 13px;
 }
@@ -1579,8 +1616,8 @@ li:hover .submit{
     display: inline-block;
 
     height: 58px;
-    margin-top: 24px;
-    margin-left: 6px;
+    margin-top: 22px;
+    margin-left: px;
 
     vertical-align: top;
 }
@@ -1606,7 +1643,7 @@ li:hover .submit{
 
 .wrap-radio .form-title{
     margin-bottom: 6px;
-    margin-left: 13px;
+    margin-left: 15px;
 }
 
 .wrap-radio{
@@ -1635,10 +1672,10 @@ li:hover .submit{
     line-height: 18px;
 
     margin-left: px;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-right: 50px;
     padding-bottom: 8px;
-    padding-left: 10px;
+    padding-left: 16px;
 
     color: #fff;
     border: none;
@@ -1646,7 +1683,7 @@ li:hover .submit{
     background-color: #9db1a5;
     background-image: url(../img/icon-down-dir.png);
     background-repeat: no-repeat;
-    background-position: 164px 11px;
+    background-position: 168px 11px;
 
             appearance: none;
        -moz-appearance: none;
@@ -1661,13 +1698,13 @@ li:hover .submit{
     color: #323232;
     background-image: url(../img/icon-down-dir.svg);
     background-repeat: no-repeat;
-    background-position: 164px 11px;
+    background-position: 168px 11px;
 }
 
 .roolt p{
     margin: 0;
     margin-bottom: 5px;
-    margin-left: 6px;
+    margin-left: 5px;
 }
 
 .range{
@@ -1896,6 +1933,7 @@ li:hover .submit{
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+
     margin: 0;
     padding-left: 15px;
 }
@@ -2156,60 +2194,145 @@ li:hover .submit{
 }
 
 .pageswitch{
-    display: flex;
+    position: relative;
 
     margin-top: 82px;
     margin-bottom: 39px;
-    padding-right: 16px;
+}
+
+.wrapper-page{
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 
     justify-content: flex-end;
 }
 
-.wrapper-page{
-    padding-right: 8px;
-    padding-left: 17px;
-
-    background-image: url(../img/icon-small.png),
-    url(../img/icon-right-small.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 178px 6px, -2px 5px;
-}
-
-.wrapper-page a:nth-child(1){
+.page{
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
 
-    padding: 5px 10px;
+    z-index: 999;
 
     text-align: center;
+
+    color: #fff;
+}
+
+.wrapper-page li:nth-child(6){
+    padding-right: 24px;
+}
+
+.wrapper-page li:nth-child(3),
+.wrapper-page li:nth-child(4),
+.wrapper-page li:nth-child(5){
+    padding-right: 20px;
+}
+
+.wrapper-page li:nth-child(2){
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+.page-active{
+    padding: 4px 10px;
 
     color: #323232;
     border-radius: 50%;
     background-color: #fff;
 }
 
-.wrapper-page a{
-    font-size: 16px;
-    font-weight: 500;
+.two:hover::before{
+    position: absolute;
+    top: -4px;
+    right: 110px;
 
-    margin: 0;
-    padding: 3px 8px;
+    width: 30px;
+    height: 30px;
 
-    text-decoration: none;
+    content: '';
+    cursor: pointer;
 
+    opacity: .2;
     border-radius: 50%;
+    background-color: #fff;
 }
 
-.wrapper-page a:not(:nth-child(1)):hover{
-    font-size: 16px;
-    font-weight: 500;
 
-    padding: 3px 8px;
 
+.two:active::before{
+    position: absolute;
+    top: -4px;
+    right: 110px;
+
+    display: none;
+
+    width: 20px;
+    height: 20px;
+
+    content: '';
+
+    color: #323232;
     border-radius: 50%;
-    background-color: #9db1a5;
+    background-color: #fff;
 }
+
+.trio:hover::before{
+    position: absolute;
+    top: -4px;
+    right: 80px;
+
+    width: 30px;
+    height: 30px;
+
+    content: '';
+
+    opacity: .2;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.four:hover::before{
+    position: absolute;
+    top: -4px;
+    right: 50px;
+
+    width: 30px;
+    height: 30px;
+
+    content: '';
+
+    opacity: .2;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.five:hover::before{
+    position: absolute;
+    top: -4px;
+    right: 20px;
+
+    width: 30px;
+    height: 30px;
+
+    content: '';
+    cursor: pointer;
+
+    opacity: .2;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.page:active{
+    color: #323232;
+}
+
+
+
 
 /* Стили для footer*/
 
@@ -2224,10 +2347,7 @@ li:hover .submit{
     display: flex;
 
     padding-top: 20px;
-
-    background-image: url(../img/heart.svg);
-    background-repeat: no-repeat;
-    background-position: 400px 29px;
+    padding-bottom: 10px;
 
     justify-content: space-between;
     align-items: center;
@@ -2305,21 +2425,39 @@ li:hover .submit{
 .footer-documentation ul{
     display: flex;
 
-    width: 304px;
-    margin-right: 12px;
+    width: 334px;
+    margin-right: 22px;
 
     flex-wrap: wrap;
 }
 
 
 
+.footer-documentation img{
+    margin-right: 7px;
+}
+
+
+
+.footer-documentation  li:nth-child(1){
+    width: 161px;
+}
+
+.post{
+    padding-bottom: 4px;
+}
+
+
+
 .footer-documentation  li:nth-child(2){
+    margin-left: 22px;
+
     order: 1;
 }
 
 .footer-documentation  li:nth-child(3){
-    margin-left: 32px;
-    padding-bottom: 2px;
+    margin-left: 2px;
+    padding-bottom: 1px;
 }
 
 .footer-documentation  li:nth-child(4){
@@ -2327,6 +2465,8 @@ li:hover .submit{
 
     order: 3;
 }
+
+
 
 .overflow{
     position: fixed;
