@@ -2498,16 +2498,16 @@ li:hover .submit{
 }
 
 .popup-form textarea{
-		width: 394px;
-		height: 155px;
-		padding-top: 13px;
-		padding-right: 15px;
-		padding-left: 15px;
+	width: 394px;
+	height: 155px;
+	padding-top: 13px;
+	padding-right: 15px;
+	padding-left: 15px;
 
-		border: 1px solid rgba(178, 178, 178, .52);
-		border-radius: 5px;
-		outline: none;
-		background-color: #fff;
+	border: 1px solid rgba(178, 178, 178, .52);
+	border-radius: 5px;
+	outline: none;
+	background-color: #fff;
 }
 
 .popup-form textarea:hover{
